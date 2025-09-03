@@ -186,7 +186,7 @@
 ## 参数与默认值建议（可配置）
 - `NumPollers = 用户配置（缺省 runtime.NumCPU()）`
 - `TxBatchWindow = 10ms`，`TxBatchBytes = 32KiB`，`TxBatchMsgs = 16`
-- `Compression: immediate=LZ4, delayed=Zstd(level=1)`
+- `Compression: immediate=no compress, delayed=Zstd(level=1)`
 - `MaxPayload = 16MiB`，`MaxBatchMsgs = 64K`
 - `Rx/Tx ring = 1~8MiB/conn`（按业务报文大小与并发调优）
  - `TimerWheelTick = 1ms`
